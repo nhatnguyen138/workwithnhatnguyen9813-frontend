@@ -1,0 +1,39 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Anton|Readex+Pro|Corinthia|Inconsolata");
+$fontHeading: Anton;
+$fontDefault: Readex Pro;
+$fontSpecial: Corinthia;
+$fontCode:    Inconsolata;
+
+// Colors
+$dark:  #000000;
+$black: #101010;
+$grey:  #303030;
+$white: #EEEEEE;
+$light: #FFFFFF;
+$blue:  #0080FF;
+
+// Colors filters for SVGs
+$SVG_black: none;
+$SVG_white: invert(99%) sepia(5%) saturate(1050%) hue-rotate(222deg) brightness(119%) contrast(100%);
+$SVG_grey:  invert(86%) sepia(10%) saturate(8%) hue-rotate(45deg) brightness(95%) contrast(89%);
+$SVG_blue:  invert(36%) sepia(50%) saturate(5080%) hue-rotate(198deg) brightness(104%) contrast(103%);
+
+body {
+  color: white;
+  font-family: $fontDefault;
+}
+
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 365px;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%,rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%,rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
+    linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%,rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%,rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
+    linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%,rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%,rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
+    linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
