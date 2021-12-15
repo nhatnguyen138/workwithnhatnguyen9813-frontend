@@ -15,12 +15,14 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blogposts" element={<BlogPosts />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-      </Routes>
+      <div className="Content">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blogposts" element={<BlogPosts />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

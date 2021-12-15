@@ -20,7 +20,7 @@ $SVG_grey:  invert(86%) sepia(10%) saturate(8%) hue-rotate(45deg) brightness(95%
 $SVG_blue:  invert(36%) sepia(50%) saturate(5080%) hue-rotate(198deg) brightness(104%) contrast(103%);
 
 body {
-  color: white;
+  color: $light;
   font-family: $fontDefault;
 }
 
@@ -36,4 +36,33 @@ body {
     linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%,rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%,rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
     linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%,rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%,rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
     linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+
+  .Content {
+    margin: 120px auto auto auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .App {
+    .Content {
+      margin: 100px auto auto auto;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    .Content {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    .Content {
+      width: 1148px;
+    }
+  }
 }
