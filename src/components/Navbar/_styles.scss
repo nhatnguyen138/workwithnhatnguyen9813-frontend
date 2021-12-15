@@ -1,0 +1,50 @@
+@import '/src/_styles';
+
+#Navbar {
+  display: flex;
+  gap: 40px;
+  .NavBtn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
+    color: $blue;
+    .NavIcon {
+      width: 30px;
+      filter: $SVG_blue;
+      margin-bottom: 10px;
+    }
+    &:hover > .NavIcon {
+      filter: $SVG_white;
+      transition: 0.2s;
+    }
+    &:hover > span {
+      color: $light;
+      margin-top: -5px;
+      transition: 0.2s;
+    }
+  }
+  .NavBtn.Selected > .NavIcon {
+    filter: $SVG_white;
+  }
+  .NavBtn.Selected > span {
+    color: $light;
+  }
+}
+
+@media (max-width: 767px) {
+  #Navbar {
+    gap: 12px;
+    .NavBtn {
+      .NavIcon {
+        width: 35px;
+        margin-bottom: 0;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
