@@ -1,0 +1,36 @@
+@import '/src/_styles';
+
+#Header {
+  position: fixed;
+  background-color: $dark;
+  width: 100vw;
+  .HeaderWidth {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #Header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Header {
+    .HeaderWidth {
+      width: calc(100% - 40px);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #Header {
+    .HeaderWidth {
+      width: 1148px;
+    }
+  }
+}
