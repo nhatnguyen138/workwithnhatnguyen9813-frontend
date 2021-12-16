@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  animation: titleFadeIn 0.5s;
   .Title {
     font-family: $fontHeading;
     text-transform: uppercase;
@@ -39,6 +40,13 @@
   }
 }
 
-@media (min-width: 1200px) {
-  
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
