@@ -10,9 +10,9 @@ export default function Navbar() {
         link="/portfolio"
       />
       <NavBtn
-        title="Blog Posts"
-        name="icon-blogposts"
-        link="/blogposts"
+        title="Articles"
+        name="icon-articles"
+        link="/articles"
       />
       <NavBtn
         title="About Me"
