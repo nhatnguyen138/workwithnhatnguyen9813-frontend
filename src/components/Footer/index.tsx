@@ -24,7 +24,7 @@ export default function Footer() {
               />
               <SocialIcon
                 name="github"
-                link="https://www.github.com/in/nhatnguyen9813/"
+                link="https://www.github.com/nhatnguyen9813/"
               />
               <SocialIcon
                 name="mail"
