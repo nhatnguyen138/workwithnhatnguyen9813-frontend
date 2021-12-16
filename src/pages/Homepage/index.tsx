@@ -4,7 +4,7 @@ import './_styles.scss'
 import Cover from './Cover'
 import Aboutme from './Aboutme'
 import Portfolio from './Portfolio'
-import Blogposts from './Blogposts'
+import Articles from './Articles'
 
 export default function Homepage() {
   return (
@@ -12,7 +12,7 @@ export default function Homepage() {
       <Cover />
       <Aboutme />
       <Portfolio />
-      <Blogposts />
+      <Articles />
     </div>
   )
 }

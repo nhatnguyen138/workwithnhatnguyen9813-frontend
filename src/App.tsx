@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 // Pages
 import Homepage from './pages/Homepage'
 import Portfolio from './pages/Portfolio'
-import BlogPosts from './pages/BlogPosts'
+import Articles from './pages/Articles'
 import AboutMe from './pages/AboutMe'
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/blogposts" element={<BlogPosts />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="/aboutme" element={<AboutMe />} />
         </Routes>
       </div>
