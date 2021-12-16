@@ -12,6 +12,7 @@
     -webkit-text-stroke: 2px $light;
     color: rgba(0,0,0,0);
     margin: 0;
+    animation: textColor 0.9s;
   }
   .Subtitle {
     color: $white;
@@ -48,5 +49,17 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes textColor {
+  0% {
+    -webkit-text-stroke: 2px $blue;
+  }
+  45% {
+    -webkit-text-stroke: 2px $blue;
+  }
+  100% {
+    -webkit-text-stroke: 2px $light;
   }
 }
