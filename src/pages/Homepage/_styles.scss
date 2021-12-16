@@ -1,1 +1,23 @@
 @import '/src/_styles';
+
+.HomepageContainer {
+  .Section {
+    &:not(:first-of-type) {
+      animation: sectionFadeIn 2.7s;
+    }
+  }
+}
+
+@keyframes sectionFadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -8,7 +8,7 @@ import Blogposts from './Blogposts'
 
 export default function Homepage() {
   return (
-    <div className="Homepage">
+    <div className="HomepageContainer">
       <Cover />
       <Aboutme />
       <Portfolio />
