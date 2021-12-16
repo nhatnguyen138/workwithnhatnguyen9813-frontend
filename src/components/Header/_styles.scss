@@ -4,6 +4,7 @@
   position: fixed;
   background-color: $dark;
   width: 100vw;
+  z-index: 1200;
   .HeaderWidth {
     width: 100%;
     display: flex;
