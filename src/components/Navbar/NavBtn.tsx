@@ -10,7 +10,7 @@ export default function NavBtn(props:NavBtnProps) {
   const { title, name, link } = props
   const navigate = useNavigate()
   const pathname = window.location.pathname
-  let BtnClass = "NavBtn"
+  let BtnClass = "Unselectable NavBtn"
   if (pathname.startsWith(link)) {
     BtnClass+=" Selected"
   }

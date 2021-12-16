@@ -5,7 +5,7 @@ export default function Cover() {
   return (
     <div className="Cover Section">
       <img className="Portrait" src="/images/homecover-portrait.png" alt="Portrait" />
-      <div className="Text">
+      <div className="Text Unselectable">
         <p>Greetings</p>        
         <p className="special">Greetings</p>        
         <p>Greetings</p>        
