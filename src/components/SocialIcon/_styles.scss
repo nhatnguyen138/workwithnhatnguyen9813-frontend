@@ -1,0 +1,14 @@
+@import '/src/_styles';
+
+.SocialIcon {
+  filter: $SVG_blue;
+  width: 50px;
+  &:hover {
+    filter: $SVG_white;
+    transition: 0.3s;
+  }
+  &:not(hover) {
+    filter: $SVG_blue;
+    transition: 0.2s;
+  }
+}
