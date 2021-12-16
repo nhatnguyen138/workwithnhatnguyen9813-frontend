@@ -38,8 +38,6 @@
 @media (min-width: 768px) {
   #Footer {
     .FooterWidth {
-      width: 1148px;
-      margin: 0 auto;
       .Sections {
         display: flex;
         flex-direction: row;
@@ -56,6 +54,8 @@
 @media (min-width: 1200px) {
   #Footer {
     .FooterWidth {
+      width: 1148px;
+      margin: 0 auto;
       .Sections {
         .Section:first-of-type {
           margin-left: 0px;
