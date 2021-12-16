@@ -1,0 +1,66 @@
+@import '/src/_styles';
+
+#Footer {
+  z-index: 1000;
+  background-color: $grey;
+  margin-top: 90px;
+  padding: 2px 10px 20px 10px;
+  .Section {
+    margin: 10px;
+  }
+  .Section.Contactme {
+    p {
+      font-size: 0.95rem;
+    }
+    .Socials {
+      display: flex;
+      gap: 8px;
+    }
+  }
+  .Section.Copyright {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  #Footer {
+    .Section.Contactme {
+      p {
+        max-width: 400px;
+      }
+    }
+    .Section.Copyright {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #Footer {
+    .FooterWidth {
+      width: 1148px;
+      margin: 0 auto;
+      .Sections {
+        display: flex;
+        flex-direction: row;
+        .Section {
+          width: 270px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #Footer {
+    .FooterWidth {
+      .Sections {
+        .Section:first-of-type {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
