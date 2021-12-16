@@ -2,6 +2,7 @@
 
 .HomepageContainer {
   .Section {
+    margin-bottom: 50px;
     &:not(:first-of-type) {
       animation: sectionFadeIn 2.7s;
     }

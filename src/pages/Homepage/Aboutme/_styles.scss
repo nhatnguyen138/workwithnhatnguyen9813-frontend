@@ -1,1 +1,63 @@
 @import '/src/_styles';
+
+.Section.Aboutme {
+  background-color: rgba(3,3,3,0.5);
+  padding: 30px 50px 30px 50px;
+  .SectionWidth {
+    display: flex;
+    align-items: center;
+    .Portrait {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border-bottom: 8px solid $blue;
+    }
+    .Text {
+      .pHeading {
+        font-size: 26px;
+        margin-bottom: 40px;
+        span {
+          font-size: 16px;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Section.Aboutme {
+    .SectionWidth {
+      flex-direction: column;
+      .Portrait {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Section.Aboutme {
+    .SectionWidth {
+      flex-direction: row;
+      gap: 50px;
+      .Portrait {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .Section.Aboutme {
+    position: relative;
+    width: 100vw;
+    margin-left: calc((100vw - 928px)/-2);
+    .SectionWidth {
+      width: 1148px;
+      margin-left: calc((100vw - 1033px)/2);
+    }
+  }
+}

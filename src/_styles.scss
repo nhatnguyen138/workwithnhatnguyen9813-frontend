@@ -22,6 +22,16 @@ $SVG_blue:  invert(36%) sepia(50%) saturate(5080%) hue-rotate(198deg) brightness
 body {
   color: $light;
   font-family: $fontDefault;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    color: $blue;
+    &:hover {
+      text-decoration: underline;
+      color: $light;
+      transition: 0.2s;
+    }
+  }
 }
 
 .App {
