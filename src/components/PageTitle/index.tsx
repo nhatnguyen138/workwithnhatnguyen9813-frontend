@@ -9,7 +9,7 @@ export default function PageTitle(props:PageTitleProps) {
   const { title, subtitle } = props
   return (
     <article className="PageTitle">
-      <h1 className="Title">{title}</h1>
+      <h1 className="Unselectable Title">{title}</h1>
       {subtitle && <p className="Subtitle">{subtitle}</p>}
     </article>
   )
