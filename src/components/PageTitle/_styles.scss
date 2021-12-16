@@ -1,0 +1,46 @@
+@import '/src/_styles';
+
+.PageTitle {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  .Title {
+    font-family: $fontHeading;
+    font-size: 4rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px $light;
+    color: rgba(0,0,0,0);
+    margin: 0;
+  }
+  .Subtitle {
+    font-size: 0.95rem;
+    color: $white;
+  }
+}
+
+@media (max-width: 767px) {
+  .PageTitle {
+    .Title {
+      font-size: 4rem;
+    }
+    .Subtitle {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .PageTitle {
+    .Title {
+      font-size: 6rem;
+    }
+    .Subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}
