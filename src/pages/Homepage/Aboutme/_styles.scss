@@ -14,13 +14,21 @@
     }
     .Text {
       .pHeading {
-        font-size: 26px;
-        margin-bottom: 40px;
-        span {
-          font-size: 16px;
-          color: $blue;
-        }
+        font-family: $fontHeading;
+        -webkit-text-stroke: 2px $light;
+        color: rgba(0,0,0,0);
+        font-size: 100px;
+        margin: -100px auto 0 auto;
+        animation: headingBlink 6s infinite;
       }
+    }
+    h3 { font-weight: normal; }
+    p { margin-left: 20px; }
+    span {
+      color: $blue;
+    }
+    a {
+      margin-left: -10px;
     }
   }
 }
@@ -32,6 +40,12 @@
       .Portrait {
         width: 140px;
         height: 140px;
+      }
+      .Text {
+        .pHeading {
+          font-size: 70px;
+          margin: -60px auto 0 auto;
+        }
       }
     }
   }
@@ -59,5 +73,24 @@
       width: 1148px;
       margin-left: calc((100vw - 1033px)/2);
     }
+  }
+}
+
+@keyframes headingBlink {
+  0% {
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 2px $light;
+  }
+  5% {
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke: 2px $grey;
+  }
+  14% {
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 2px $light;
+  }
+  100% {
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 2px $light;
   }
 }
