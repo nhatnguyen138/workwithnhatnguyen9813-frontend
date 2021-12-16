@@ -12,6 +12,10 @@
     margin: 0 auto;
     .SiteLogo {
       cursor: pointer;
+      &:hover {
+        transform: scale(0.95);
+        transition: 0.2s;
+      }
     }
   }
 }
