@@ -7,14 +7,12 @@
   align-items: center;
   .Title {
     font-family: $fontHeading;
-    font-size: 4rem;
     text-transform: uppercase;
     -webkit-text-stroke: 2px $light;
     color: rgba(0,0,0,0);
     margin: 0;
   }
   .Subtitle {
-    font-size: 0.95rem;
     color: $white;
   }
 }
