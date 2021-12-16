@@ -12,7 +12,7 @@ export default function Homepage() {
       <MetaTags
         section=""
         description="Work with @nhatnguyen9813: Homepage"
-        image="https://i.imgur.com/WYrbInu.jpeg"
+        image="https://i.imgur.com/xYmq7OE.png"
       />
       <Cover />
       <Aboutme />

@@ -10,7 +10,7 @@ export default function Articles() {
       <MetaTags
         section={Title}
         description={Subtitle}
-        image="https://i.imgur.com/WYrbInu.jpeg"
+        image="https://i.imgur.com/xYmq7OE.png"
       />
       <PageTitle
         title={Title}

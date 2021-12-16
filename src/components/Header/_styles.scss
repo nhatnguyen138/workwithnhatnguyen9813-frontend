@@ -10,6 +10,9 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    .SiteLogo {
+      cursor: pointer;
+    }
   }
 }
 
@@ -17,6 +20,10 @@
   #Header {
     padding-top: 5px;
     padding-bottom: 5px;
+    .SiteLogo {
+      height: 75px;
+      margin-top: -10px;
+    }
   }
 }
 
@@ -24,6 +31,10 @@
   #Header {
     .HeaderWidth {
       width: calc(100% - 40px);
+    }
+    .SiteLogo {
+      height: 80px;
+      margin-top: 5px;
     }
   }
 }
