@@ -1,0 +1,59 @@
+@import '/src/_styles';
+
+.PortfolioContainer {
+  .Section {
+    margin: 0 auto 50px auto;
+    animation: sectionFadeIn 1s;
+  }
+  .Section.Overview {
+    .Caption {
+      text-align: center;
+      font-size: 2rem;
+      font-style: italic;
+      color: $white;
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .PortfolioContainer {
+    .Section {
+      width: 90%;
+      margin: 0 auto 50px auto;
+    }
+    .Section.Overview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .PortfolioContainer {
+    .Section {
+      width: 90%;
+      margin: 0 auto 50px auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+@keyframes sectionFadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
