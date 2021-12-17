@@ -1,0 +1,126 @@
+@import '/src/_styles';
+
+.PortfolioCard {
+  &:first-of-type {
+    margin-top: -30px;
+  }
+  .LargeText {
+    font-family: $fontHeading;
+    font-size: 8rem;
+    -webkit-text-stroke: 3px $darkblue;
+    color: rgba(0,0,0,0);
+    text-transform: uppercase;
+  }
+  .Text {
+    max-width: 85%;
+    position: absolute;
+    font-size: 1.3rem;
+  }
+  .Technologies {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: -10px;
+    span {
+      text-decoration: underline;
+    }
+    .Technology {
+      width: 50px;
+    }
+  }
+  &:nth-of-type(2) {
+    .LargeText {
+      -webkit-text-stroke: 0px;
+      color: $darkblue;  
+    }
+  }
+  &:nth-of-type(3) {
+    .LargeText {
+      -webkit-text-stroke: 3px $light;
+    }
+    .Text {
+      background-color: $darkblue;
+      padding: 3px 6px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .PortfolioCard {
+    .Text {
+      width: 310px;
+      margin-top: -5rem;
+      margin-left: 1rem;
+    }
+    .Technologies {
+      margin-left: 0;
+      span {
+        font-size: 0.9rem;
+      }
+      .Technology {
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .PortfolioCard {
+    .LargeText {
+      font-size: 10rem;
+    }
+    .Text {
+      margin-top: -6rem;
+      margin-left: 2.25em;
+    }
+    .Technologies {
+      margin-left: 30px;
+      span {
+        font-size: 1rem;
+      }
+      .Technology {
+        width: 60px;
+      }
+    }
+    &:nth-of-type(1) {
+      margin-left: 5%;
+    }
+    &:nth-of-type(2) {
+      margin-left: 36%;
+    }
+    &:nth-of-type(3) {
+      margin-left: 17%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .PortfolioCard {
+    .LargeText {
+      font-size: 10rem;
+    }
+    .Text {
+      margin-top: -6rem;
+      margin-left: 2.25em;
+    }
+    .Technologies {
+      margin-left: 20px;
+      span {
+        font-size: 1rem;
+      }
+      .Technology {
+        width: 60px;
+      }
+    }
+    &:nth-of-type(1) {
+      margin-left: 57.4px;
+    }
+    &:nth-of-type(2) {
+      margin-left: 413.28px;
+    }
+    &:nth-of-type(3) {
+      margin-left: 195.16px;
+    }
+  }
+}
