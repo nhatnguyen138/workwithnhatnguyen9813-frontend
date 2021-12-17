@@ -1,5 +1,13 @@
 import MetaTags from '../../components/MetaTags'
 import PageTitle from '../../components/PageTitle'
+import './_styles.scss'
+
+import Overview from './Overview'
+import Projects from './Projects'
+import TechPreferences from './TechPreferences'
+import Comments from './Comments'
+import Designs from './Designs'
+import ExternalLinks from './ExternalLinks'
 
 const Title = "Portfolio"
 const Subtitle = "Showcase of my selected work/past projects"
@@ -16,6 +24,12 @@ export default function Portfolio() {
         title={Title}
         subtitle={Subtitle}
       />
+      <Overview />
+      <Projects />
+      <TechPreferences />
+      <Comments />
+      <Designs />
+      <ExternalLinks />
     </div>
   )
 }
