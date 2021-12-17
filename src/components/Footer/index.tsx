@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div className="Section Contactme" id="ContactInfo">
             <h3>Contact Me</h3>
-            <p>Nhat K. "James" Nguyen, Full-Stack Developer | Software Engineer | Frontend Enthusiast</p>
+            <p>Nhat K. "James" Nguyen, Full-Stack Software Engineer | Frontend ReactJS Web Developer</p>
             <div className="Socials">
               <SocialIcon
                 name="linkedin"
