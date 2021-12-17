@@ -1,0 +1,27 @@
+@import '/src/_styles';
+
+.Section.ExternalLinks {
+  margin-top: 120px;
+  .Heading {
+    font-family: $fontHeading;
+    font-size: 40px;
+    -webkit-text-stroke: 2px $light;
+    color: rgba(0,0,0,0);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .List {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .Section.ExternalLinks {
+    .Heading {
+      margin-left: 7%;
+    }
+  }
+}
