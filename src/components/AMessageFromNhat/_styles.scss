@@ -1,0 +1,77 @@
+@import '/src/_styles';
+
+.AMessageFromNhat {
+  background-color: rgba(00,30,256,0.2);
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0,0,0,0.7);
+  padding: 30px;
+  animation: messageFadeIn 3s;
+  .mHeading {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin: -55px -20px 30px -20px;
+    img {
+      filter: $SVG_white;
+      width: 60px;
+      animation: iconShake 1.7s infinite;
+    }
+    span {
+      font-family: $fontHeading;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .AMessageFromNhat {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .AMessageFromNhat {
+    width: 75%;
+    max-width: 750px;
+  }
+}
+
+@keyframes messageFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  90% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes iconShake {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(-20deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  15% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

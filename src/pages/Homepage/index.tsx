@@ -3,6 +3,7 @@ import './_styles.scss'
 
 import Cover from './Cover'
 import Aboutme from './Aboutme'
+import Message from './Message'
 import Portfolio from './Portfolio'
 import Articles from './Articles'
 
@@ -16,6 +17,7 @@ export default function Homepage() {
       />
       <Cover />
       <Aboutme />
+      <Message />
       <Portfolio />
       <Articles />
     </div>
