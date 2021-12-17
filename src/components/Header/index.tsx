@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <div id="Header">
       <div className="HeaderWidth">
-        {width<768 ? <img className="SiteLogo" src="/logo192.png" alt="site-logo" onClick={handleClick} /> : <img className="SiteLogo" src="/logo-full.png" alt="site-logo" onClick={handleClick} />}
+        {width<768 ? <img className="Unselectable SiteLogo" src="/logo192.png" alt="site-logo" onClick={handleClick} /> : <img className="Unselectable SiteLogo" src="/logo-full.png" alt="site-logo" onClick={handleClick} />}
         <Navbar />
       </div>
     </div>
