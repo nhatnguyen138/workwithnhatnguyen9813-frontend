@@ -27,8 +27,8 @@ export default function Portfolio() {
       <Overview />
       <Projects />
       <TechPreferences />
-      <Comments />
       <Designs />
+      <Comments />
       <ExternalLinks />
     </div>
   )
