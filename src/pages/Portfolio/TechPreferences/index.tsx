@@ -40,7 +40,7 @@ export default function TechPreferences() {
               <img className="TechImage" src="/logos/graphql.png" alt="icon-graphql" />
               <img className="TechImage" src="/logos/mysql.png" alt="icon-mysql" />
             </div>
-            <span>MongoDB, GraphQL, SQL, PostgresSQL</span>
+            <span>MongoDB, RESTful APIs, GraphQL, SQL, PostgresSQL</span>
           </div>
           <div className="Row">
             <div className="Unselectable Image">

@@ -88,10 +88,20 @@
       margin-left: 5%;
     }
     &:nth-of-type(2) {
-      margin-left: 36%;
+      .LargeText {
+        text-align: right;
+        padding-right: 5%;
+      }
+      .Text {
+        right: 10%;
+      }
+      .Technologies {
+        justify-content: flex-end;
+        padding-right: 5%;
+      }
     }
     &:nth-of-type(3) {
-      margin-left: 17%;
+      margin-left: 20%;
     }
   }
 }
@@ -105,23 +115,23 @@
       margin-top: -6rem;
       margin-left: 2.25em;
     }
-    .Technologies {
-      margin-left: 20px;
-      span {
-        font-size: 1rem;
-      }
-      .Technology {
-        width: 60px;
-      }
-    }
     &:nth-of-type(1) {
-      margin-left: 57.4px;
+      margin-left: 35px;
     }
     &:nth-of-type(2) {
-      margin-left: 413.28px;
+      .LargeText {
+        padding-right: 57.4px;
+      }
+      .Text {
+        right: auto;
+        margin-left: 425px;
+      }
+      .Technologies {
+        padding-right: 57.4px;
+      }
     }
     &:nth-of-type(3) {
-      margin-left: 195.16px;
+      margin-left: 196px;
     }
   }
 }
