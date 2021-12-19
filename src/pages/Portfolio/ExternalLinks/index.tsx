@@ -21,7 +21,7 @@ export default function ExternalLinks() {
         <PortfolioExtLink
           icon="window"
           title="Netlify App Archive: Blog of Nhat version 2.0"
-          description="Witness how much of the frontend development I have improved from an archive of my old website 'Blog of Nhat'."
+          description="Witness how much of the frontend development skill I have improved from an archive of my old website 'Blog of Nhat'."
           url="https://blogofnhat-version2.netlify.app/"
         />
       </div>
