@@ -10,7 +10,7 @@ export default function TechPreferences() {
             <div className="Image">
               <img className="Unselectable TechImage React" src="/logos/react.png" alt="icon-react" />
             </div>
-            <span>React, React Hooks, React Router, Redux, Jest</span>
+            <span>React, React Hooks, React Router, PWA, Redux, Jest</span>
           </div>
           <div className="Row">
             <div className="Unselectable  Image">
