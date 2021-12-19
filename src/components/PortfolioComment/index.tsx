@@ -13,7 +13,7 @@ export default function PortfolioComment(props:PortfolioCommentProps) {
   const { img, comment, name, relation, title, contact } = props
   return (
     <div className="PortfolioComment">
-      <img className="Image" src={`/portfolio/comment-${img}.jpg`} alt={img} />
+      <img className="Unselectable Image" src={`/portfolio/comment-${img}.jpg`} alt={img} />
       <p className="Comment">{comment}</p>
       <div className="Profile">
         <p className="Name">{name}</p>

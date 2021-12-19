@@ -11,7 +11,7 @@ export default function PortfolioExtLink(props:PortfolioExtLinkProps) {
   const { icon, title, description, url } = props
   return (
     <div className="PortfolioExtLink">
-      <img className="Icon" src={`/images/icon-${icon}.svg`} alt={icon} />
+      <img className="Unselectable Icon" src={`/images/icon-${icon}.svg`} alt={icon} />
       <div className="Text">
         <div className="Title">
           <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
