@@ -1,4 +1,4 @@
-import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 import './_styles.scss'
 
 interface MessageProps {
@@ -8,12 +8,12 @@ interface MessageProps {
 export default function AMessageFromNhat(props:MessageProps) {
   const { content } = props
   return (
-    <div className="AMessageFromNhat">
+    <ScrollAnimation className="AMessageFromNhat" animateIn="tada">
       <div className="Unselectable mHeading">
         <img className="Image" src="/images/icon-chatbox.svg" alt="message" />
         <span>A message from Nhat</span>
       </div>
       <div className="mContent">{content}</div>
-    </div>
+    </ScrollAnimation>
   )
 }

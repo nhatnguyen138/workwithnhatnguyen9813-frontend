@@ -19,6 +19,7 @@ export default function MetaTags(props:MetaTagsProps) {
       <title>{title}</title>
       <link rel="icon" href={Logo} />
       <link rel="apple-touch-icon" href={Logo} />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover" />
       <meta name="description" content={description} />

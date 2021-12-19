@@ -1,3 +1,4 @@
+import ScrollAnimation from 'react-animate-on-scroll'
 import './_styles.scss'
 
 interface PortfolioCommentProps {
@@ -12,7 +13,7 @@ interface PortfolioCommentProps {
 export default function PortfolioComment(props:PortfolioCommentProps) {
   const { img, comment, name, relation, title, contact } = props
   return (
-    <div className="PortfolioComment">
+    <ScrollAnimation className="PortfolioComment" animateIn="fadeInUp" animateOnce={true}>
       <img className="Unselectable Image" src={`/portfolio/comment-${img}.jpg`} alt={img} />
       <p className="Comment">{comment}</p>
       <div className="Profile">
@@ -21,6 +22,6 @@ export default function PortfolioComment(props:PortfolioCommentProps) {
         <span className="Title">{title}</span>
         <span className="Contact">{contact}</span>
       </div>
-    </div>
+    </ScrollAnimation>
   )
 }
