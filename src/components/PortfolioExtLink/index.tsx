@@ -11,7 +11,7 @@ interface PortfolioExtLinkProps {
 export default function PortfolioExtLink(props:PortfolioExtLinkProps) {
   const { icon, title, description, url } = props
   return (
-    <ScrollAnimation className="PortfolioExtLink" animateIn="fadeInRight" animateOnce={true}>
+    <div className="PortfolioExtLink">
       <img className="Unselectable Icon" src={`/images/icon-${icon}.svg`} alt={icon} />
       <div className="Text">
         <div className="Title">
@@ -19,6 +19,6 @@ export default function PortfolioExtLink(props:PortfolioExtLinkProps) {
         </div>
         <div className="Description">{description}</div>
       </div>
-    </ScrollAnimation>
+    </div>
   )
 }
